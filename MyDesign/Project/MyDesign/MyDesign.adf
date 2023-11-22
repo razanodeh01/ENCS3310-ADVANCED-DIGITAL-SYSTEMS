@@ -1,0 +1,38 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=MyDesign
+[Library]
+MyDesign=.\MyDesign\MyDesign.lib
+[$LibMap$]
+MyDesign=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+AccessACCB=1
+AccessACCR=1
+AccessReadTopLevel=1
+AccessRead=1
+AccessReadWrite=1
+AccessReadWriteSLP=1
+SimulationAccessReadPaths=
+SimulationAccessReadModules=
+SimulationAccessReadWritePaths=
+SimulationAccessReadWriteModules=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+[Files]
+/ProjectCode.v=-1
+[Files.Data]
+.\src\ProjectCode.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

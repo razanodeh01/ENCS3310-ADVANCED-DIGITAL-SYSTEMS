@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<design-settings>
+	<plugins>
+		<Aldec.Stimuli.1>
+			<hierarchy activeStimuliSetName="StimuliSet18">
+				<stimuliSet name="StimuliSet1">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/fulladder/Cin"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet2">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/fulladder/Cin"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet3">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/fulladder/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="1"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/fulladder/a"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="1"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/fulladder/b"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet4">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/CarryIn"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="1010"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/a"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0101"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/b"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet5">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/CarryIn"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0101"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/a"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="1010"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/adder4/b"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet6">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet7">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet8">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/bcdadder/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet9">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/BCD/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/BCD/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/BCD/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet10">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="1110"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0001"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet11">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="11101110"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="00010001"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/testGenerater/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet12">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/Analyzer/s1"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="50ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/Analyzer/s2"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="25ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/Analyzer/c1"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus4" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="10ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/Analyzer/c2"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet13">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/CLK"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+					</stimulus>
+					<stimulus name="Stimulus4" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="01110111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus5" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="10001000"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet14">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/CLK"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="01110111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="10001000"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/y"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus4" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/Cin"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet15">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/CLK"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="01110111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="10001000"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/y"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus4" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/Cin"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet16">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/CLK"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="0"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/Cin"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus3" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="01110111"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/x"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus4" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="10001000"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/system/y"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet17">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/TEST/CLK"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet18">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="100ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/TEST/CLK"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+			</hierarchy>
+		</Aldec.Stimuli.1>
+	</plugins>
+</design-settings>

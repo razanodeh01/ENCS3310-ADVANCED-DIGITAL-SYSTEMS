@@ -1,0 +1,93 @@
+timestamp=1655233625295
+
+[~A]
+C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/ProjectCode.v=0*79499*81428
+LastVerilogToplevel=TEST
+ModifyID=23
+Version=74
+
+[~MFT]
+0=14|0MyDesign.mgf|81428|45108
+1=20|1MyDesign.mgf|237297|222916
+3=40|3MyDesign.mgf|115723|107774
+
+[$root]
+A/$root=22|||1*222916
+BinW64/$root=3*107774
+SLP=3*107889
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92164fd6cd06b60ee04d55b257ec1522ae63
+
+[Analyzer]
+A/Analyzer=22|../src/ProjectCode.v|142|1*236295
+BinW64/Analyzer=3*113967
+R=../src/ProjectCode.v|142
+SLP=3*114633
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|659b34c1ef5821f505fc9b1422d41e10729e6221e4efaa6a8714f045f53f593309762261f1ca5d1e94915f956f7d73d5
+
+[BCD]
+A/BCD=22|../src/ProjectCode.v|109|1*233678
+BinW64/BCD=3*112538
+R=../src/ProjectCode.v|109
+SLP=3*113224
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|8f9da3dab7f26bfebab1d7034af5826319f2d711ef577927172807de22506df6
+
+[DFF]
+A/DFF=22|../src/ProjectCode.v|60|1*229297
+BinW64/DFF=3*110675
+R=../src/ProjectCode.v|60
+SLP=3*111139
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|44300fc340e3bc7a054c52d81b175af6763afaae1363a4a3f300ec475255101b
+
+[TEST]
+A/TEST=22|../src/ProjectCode.v|153|1*237297
+BinW64/TEST=3*114986
+R=../src/ProjectCode.v|153
+SLP=3*115723
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|3e66e19ceaa6a9dd20817ea6d21be5d198da4126cdfb65e0339f03030e456a0b
+
+[adder4]
+A/adder4=22|../src/ProjectCode.v|13|1*224978
+BinW64/adder4=3*108606
+R=../src/ProjectCode.v|13
+SLP=3*109303
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|ca493d09929c1521748d415d0baaaf244954af04fda5396fcf933b82de1022b8
+
+[bcdadder]
+A/bcdadder=22|../src/ProjectCode.v|34|1*226880
+BinW64/bcdadder=3*109660
+R=../src/ProjectCode.v|34
+SLP=3*110333
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|3efd39a8b11c67017f1b799c0befc73463ede40dd9baa959aab7086d44a552ff0ead97f45d245495f96ca05ec3c3ef61
+
+[fulladder]
+A/fulladder=22|../src/ProjectCode.v|1|1*223290
+BinW64/fulladder=3*107957
+R=../src/ProjectCode.v|1
+SLP=3*108488
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c12a13e6fa1dde32095fc858f2c5d0a25fe0f6cc11f37d48b53e35433dff82a08c7089f00a07d113183b2da95020b9d7
+
+[system]
+A/system=22|../src/ProjectCode.v|73|1*230350
+BinW64/system=3*111345
+R=../src/ProjectCode.v|73
+SLP=3*112026
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e29932ec9028801a910085b17090f1e4553a47e72fc1fd26bb007addf3877527
+
+[testGenerater]
+A/testGenerater=22|../src/ProjectCode.v|128|1*234953
+BinW64/testGenerater=3*113545
+R=../src/ProjectCode.v|128
+SLP=3*113668
+Version=13.0.376.8320 (Windows64)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9818090f5ce6bcd2ed28ececa40beedc2aef70968c6326aa0d7dbdec50e5d7b98ecad0a5938eee0f74dc1514b3d09847
+
+[~U]
+$root=12|0*77272|
+Analyzer=12|0*79083|
+BCD=12|0*78629|
+DFF=12|0*78173|
+TEST=12|0*79285||0x10
+adder4=12|0*77713|
+bcdadder=12|0*77937|
+fulladder=12|0*77502|
+system=12|0*78372|
+testGenerater=12|0*78841|

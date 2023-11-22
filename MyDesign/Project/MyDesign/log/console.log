@@ -1,0 +1,1339 @@
+# Design: Design MyDesign already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: fulladder.
+# $root top modules: fulladder.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+fulladder fulladder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.8 [s]
+# SLP: Finished : 0.8 [s]
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 8 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.9 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4666 kB (elbread=427 elab2=4105 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+#  9:19 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# KERNEL: Error: KERNEL_0166 "/fulladder/Cin" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/fulladder/Cin" with formula "0".
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 8 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4666 kB (elbread=427 elab2=4105 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  9:24 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# KERNEL: Warning: KERNEL_0291 Object "/fulladder/Cin" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/fulladder/a" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/fulladder/b" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/fulladder/S" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/fulladder/Cout" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Error: KERNEL_0166 "/fulladder/Cin" does not have write access. Use switch +access +w_nets for this region.
+# VSIM: Error: Cannot force signal "/fulladder/Cin" with formula "0".
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +w_nets +accb +accr +access +r +m+fulladder fulladder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 5 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 8 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4809 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet2" has been made inactive.
+#  9:25 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Error: VCP2000 ProjectCode.v : (23, 39): Syntax error. Unexpected token: Cin[_IDENTIFIER].
+# Error: VCP2000 ProjectCode.v : (23, 52): Syntax error. Unexpected token: ..
+# Error: VCP2000 ProjectCode.v : (23, 60): Syntax error. Unexpected token: ..
+# Error: VCP2000 ProjectCode.v : (23, 75): Syntax error. Unexpected token: ).
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: adder4.
+# $root top modules: adder4.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+adder4 adder4
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "a" (1) on instance "/adder4/genblk1[0]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "a" (1) on instance "/adder4/genblk1[1]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "a" (1) on instance "/adder4/genblk1[2]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "a" (1) on instance "/adder4/genblk1[3]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "b" (1) on instance "/adder4/genblk1[0]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "b" (1) on instance "/adder4/genblk1[1]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "b" (1) on instance "/adder4/genblk1[2]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "b" (1) on instance "/adder4/genblk1[3]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "S" (1) on instance "/adder4/genblk1[0]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "S" (1) on instance "/adder4/genblk1[1]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "S" (1) on instance "/adder4/genblk1[2]/U1".
+# SLP: Warning: ProjectCode.v (23): Length of connection (4) does not match the length of port "S" (1) on instance "/adder4/genblk1[3]/U1".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 20 (100.00%) primitives and 0 other processes in SLP
+# SLP: 0 signals in SLP and 37 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5374 kB (elbread=427 elab2=4812 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet3" has been made inactive.
+#  9:33 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ProjectCode.v : (28, 76): Implicit net declaration, symbol i has not been declared in module adder4 in generate block 1generateblock.
+# Warning: VCP2605 ProjectCode.v : (28, 1): Port connection for port Cout violates IEEE 1364. Only net expression can be connected to output/inout port.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: adder4.
+# $root top modules: adder4.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: adder4.
+# $root top modules: adder4.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+adder4 adder4
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 20 (90.91%) primitives and 2 (9.09%) other processes in SLP
+# SLP: 0 signals in SLP and 38 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5376 kB (elbread=427 elab2=4814 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet4" has been made inactive.
+#  9:37 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/adder4/a" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/adder4/b" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/adder4/CarryIn" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/adder4/Sum" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/adder4/CarryOut" has already been traced.
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 ProjectCode.v : (55, 44): Undefined module: ADDER4 was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ProjectCode.v : (45, 25): Implicit net declaration, symbol S has not been declared in module bcdadder.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder.
+# $root top modules: bcdadder.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ProjectCode.v : (45, 25): Implicit net declaration, symbol S has not been declared in module bcdadder.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder.
+# $root top modules: bcdadder.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+bcdadder bcdadder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (45): Length of connection (1) does not match the length of port "Sum" (4) on instance "/bcdadder/U1".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 43 (84.31%) primitives and 8 (15.69%) other processes in SLP
+# SLP: 1 (1.12%) signals in SLP and 87 (97.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5383 kB (elbread=428 elab2=4820 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet5" has been made inactive.
+#  9:45 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 ProjectCode.v : (45, 25): Implicit net declaration, symbol S has not been declared in module bcdadder.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder.
+# $root top modules: bcdadder.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (45): Length of connection (1) does not match the length of port "Sum" (4) on instance "/bcdadder/U1".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 43 (84.31%) primitives and 8 (15.69%) other processes in SLP
+# SLP: 1 (1.12%) signals in SLP and 87 (97.75%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5383 kB (elbread=428 elab2=4820 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet6" has been made inactive.
+#  9:46 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# KERNEL: Warning: KERNEL_0291 Object "/bcdadder/Cin" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/bcdadder/x" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/bcdadder/y" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/bcdadder/Sum" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/bcdadder/Cout" has already been traced.
+# VSIM: 0 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder.
+# $root top modules: bcdadder.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+bcdadder bcdadder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 43 (84.31%) primitives and 8 (15.69%) other processes in SLP
+# SLP: 1 (1.14%) signals in SLP and 87 (98.86%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5383 kB (elbread=428 elab2=4820 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet7" has been made inactive.
+#  11:14 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 43 (84.31%) primitives and 8 (15.69%) other processes in SLP
+# SLP: 1 (1.14%) signals in SLP and 87 (98.86%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5383 kB (elbread=428 elab2=4820 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+#  11:14 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 43 (84.31%) primitives and 8 (15.69%) other processes in SLP
+# SLP: 1 (1.14%) signals in SLP and 87 (98.86%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5383 kB (elbread=428 elab2=4820 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+#  11:14 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: {.
+# Error: VCP2000 ProjectCode.v : (84, 21): Syntax error. Unexpected token: }.
+# Warning: VCP2515 ProjectCode.v : (84, 16): Undefined module: S was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: (.
+# Error: VCP2000 ProjectCode.v : (84, 21): Syntax error. Unexpected token: ).
+# Warning: VCP2515 ProjectCode.v : (84, 16): Undefined module: S was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: (.
+# Error: VCP2000 ProjectCode.v : (84, 22): Syntax error. Unexpected token: }.
+# Warning: VCP2515 ProjectCode.v : (84, 17): Undefined module: S was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 1[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: {.
+# Error: VCP2000 ProjectCode.v : (84, 21): Syntax error. Unexpected token: }.
+# Warning: VCP2515 ProjectCode.v : (84, 16): Undefined module: S was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: {.
+# Error: VCP2000 ProjectCode.v : (84, 21): Syntax error. Unexpected token: }.
+# Warning: VCP2515 ProjectCode.v : (84, 19): Undefined module: Cout was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (84, 14): Syntax error. Unexpected token: (.
+# Error: VCP2000 ProjectCode.v : (84, 21): Syntax error. Unexpected token: ).
+# Warning: VCP2515 ProjectCode.v : (84, 19): Undefined module: Cout was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF BCD.
+# $root top modules: bcdadder DFF BCD.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+BCD BCD
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 6 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5369 kB (elbread=427 elab2=4807 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet8" has been made inactive.
+#  11:30 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater.
+# $root top modules: bcdadder DFF testGenerater.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater.
+# $root top modules: bcdadder DFF testGenerater.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater.
+# $root top modules: bcdadder DFF testGenerater.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater.
+# $root top modules: bcdadder DFF testGenerater.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+testGenerater testGenerater
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 18 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4808 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet9" has been made inactive.
+#  11:36 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 6 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 18 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4808 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet10" has been made inactive.
+#  11:37 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2000 ProjectCode.v : (111, 25): Syntax error. Unexpected token: !=[O_NEQU].
+# Error: VCP2000 ProjectCode.v : (112, 13): Syntax error. Unexpected token: $display[_SYSTEM_DISPLAY].
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater Analyzer.
+# $root top modules: bcdadder DFF testGenerater Analyzer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+testGenerater testGenerater
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: bcdadder DFF testGenerater Analyzer.
+# $root top modules: bcdadder DFF testGenerater Analyzer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 2 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 18 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5370 kB (elbread=427 elab2=4808 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet11" has been made inactive.
+#  11:41 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+Analyzer Analyzer
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 0 primitives and 1 (100.00%) other processes in SLP
+# SLP: 0 signals in SLP and 4 (100.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5368 kB (elbread=427 elab2=4807 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+#  11:41 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 4 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: stopped at time: 100 ns
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 ProjectCode.v : (164, 38): Undefined module: U2 was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Info: VCP2876 ProjectCode.v : (102, 24): Implicit net declaration, symbol CarryOut has not been declared in module system.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: system TEST.
+# $root top modules: system TEST.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Info: VCP2876 ProjectCode.v : (102, 24): Implicit net declaration, symbol CarryOut has not been declared in module system.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+system system
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[0]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[1]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[2]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[3]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[4]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[5]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[6]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk1[7]/u1".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[0]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[1]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[2]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[3]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[4]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[5]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[6]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "D" (1) on instance "/system/genblk2[7]/u2".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[0]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[1]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[2]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[3]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[4]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[5]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[6]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk3[7]/u5".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[0]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[1]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[2]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[3]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[4]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[5]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[6]/u1".
+# SLP: Warning: ProjectCode.v (90): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk1[7]/u1".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[0]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[1]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[2]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[3]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[4]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[5]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[6]/u2".
+# SLP: Warning: ProjectCode.v (95): Length of connection (8) does not match the length of port "Q" (1) on instance "/system/genblk2[7]/u2".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[0]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[1]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[2]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[3]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[4]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[5]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[6]/u5".
+# SLP: Warning: ProjectCode.v (106): Length of connection (9) does not match the length of port "D" (1) on instance "/system/genblk3[7]/u5".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (67.72%) primitives and 41 (32.28%) other processes in SLP
+# SLP: 3 (1.05%) signals in SLP and 280 (98.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5405 kB (elbread=430 elab2=4840 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet12" has been made inactive.
+#  11:53 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 86 (67.72%) primitives and 41 (32.28%) other processes in SLP
+# SLP: 3 (1.05%) signals in SLP and 280 (98.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5405 kB (elbread=430 elab2=4840 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet13" has been made inactive.
+#  11:55 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Info: VCP2876 ProjectCode.v : (102, 24): Implicit net declaration, symbol CarryOut has not been declared in module system.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (67.72%) primitives and 41 (32.28%) other processes in SLP
+# SLP: 3 (1.05%) signals in SLP and 280 (98.25%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5406 kB (elbread=430 elab2=4841 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet14" has been made inactive.
+#  11:56 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+system system
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (67.72%) primitives and 41 (32.28%) other processes in SLP
+# SLP: 3 (1.06%) signals in SLP and 280 (98.59%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5406 kB (elbread=430 elab2=4841 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet15" has been made inactive.
+#  11:57 AM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 ProjectCode.v : (174, 10): Syntax error. Unexpected token: endmodule[_IDENTIFIER].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2641 ProjectCode.v : (166, 31): Redundant digits given in number 3'h001.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +w_nets +accb +accr +access +r +m+TEST TEST
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (160): Length of connection (8) does not match the length of port "Cout" (1) on instance "/TEST/U2".
+# SLP: Warning: ProjectCode.v (160): Length of connection (1) does not match the length of port "S" (8) on instance "/TEST/U2".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (65.65%) primitives and 45 (34.35%) other processes in SLP
+# SLP: 3 (0.95%) signals in SLP and 312 (99.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5411 kB (elbread=430 elab2=4847 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet16" has been made inactive.
+#  12:03 PM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# KERNEL: Error: Cannot find signal /system/CLK
+# VSIM: Error: Cannot force signal "/system/CLK" with formula "0 0fs, 1 50ns -r 100ns".
+# KERNEL: Error: Cannot find signal /system/Cin
+# VSIM: Error: Cannot force signal "/system/Cin" with formula "0".
+# KERNEL: Error: Cannot find signal /system/x
+# VSIM: Error: Cannot force signal "/system/x" with formula "01110111".
+# KERNEL: Error: Cannot find signal /system/y
+# VSIM: Error: Cannot force signal "/system/y" with formula "10001000".
+# Stimuli: Info: The stimuli set "StimuliSet16" has been made active.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: ProjectCode.v (160): Length of connection (8) does not match the length of port "Cout" (1) on instance "/TEST/U2".
+# SLP: Warning: ProjectCode.v (160): Length of connection (1) does not match the length of port "S" (8) on instance "/TEST/U2".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.3 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (65.65%) primitives and 45 (34.35%) other processes in SLP
+# SLP: 3 (0.95%) signals in SLP and 312 (99.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5412 kB (elbread=430 elab2=4847 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet16" has been made inactive.
+#  12:03 PM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/CLK" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/Cin" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/X" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/Y" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/S1" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/S2" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/Cout1" has already been traced.
+# VSIM: 0 object(s) traced.
+# KERNEL: Warning: KERNEL_0291 Object "/TEST/Cout2" has already been traced.
+# VSIM: 0 object(s) traced.
+run @100ns
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: stopped at time: 300 ns
+run
+endsim
+# KERNEL: stopped at time: 5618050 ns
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k12 -work MyDesign $dsn/src/ProjectCode.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: TEST.
+# $root top modules: TEST.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +w_nets +accb +accr +access +r +m+TEST TEST
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.2 [s]
+# SLP: Finished : 0.3 [s]
+# SLP: 86 (65.65%) primitives and 45 (34.35%) other processes in SLP
+# SLP: 3 (0.95%) signals in SLP and 312 (99.05%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.3 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5412 kB (elbread=430 elab2=4847 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\Support\Desktop\NEW_Semester\Advanced_Abdul Latif\the_programe\FinalProject\MyDesign\Project\MyDesign\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet17" has been made inactive.
+#  12:07 PM, Tuesday, June 14, 2022
+#  Simulation has been initialized
+# VSIM: 1 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/Support/Desktop/NEW_Semester/Advanced_Abdul Latif/the_programe/FinalProject/MyDesign/Project/MyDesign/src/wave.asdb'.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+run @200ns
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: stopped at time: 200 ns
+run @300ns
+# KERNEL: Error! Both results are not equal, there's an problem with the addition
+# KERNEL: stopped at time: 300 ns
+run @400ns
+# KERNEL: stopped at time: 400 ns
+run @500ns
+# KERNEL: stopped at time: 500 ns
+run @600ns
+# KERNEL: stopped at time: 600 ns
+run @700ns
+# KERNEL: stopped at time: 700 ns
+endsim
+# VSIM: Simulation has finished.

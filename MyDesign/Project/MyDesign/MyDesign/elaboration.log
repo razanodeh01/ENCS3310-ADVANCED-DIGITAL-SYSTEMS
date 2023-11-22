@@ -1,0 +1,31 @@
+Active-HDL 13.0.376.8320 2022-06-14 12:07:07
+
+Elaboration top modules:
+Verilog Module                TEST
+
+
+--------------------------------------------------------------------------------------------
+Verilog Module          | Library  | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------
+TEST                    | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+testGenerater           | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+system                  | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+Analyzer                | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+BCD                     | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+bcdadder                | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+DFF                     | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+adder4                  | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+fulladder               | MyDesign |      | 13.0.376.8320 (Windows64) | -O2 -sv2k12
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Library                 | Comment
+--------------------------------------------------------------------------------------------
+MyDesign                | None
+--------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +w_nets +accb +accr +access +r +m+TEST TEST
+
+
+The performance of simulation is reduced. Version Student Edition
